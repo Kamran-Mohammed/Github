@@ -166,28 +166,10 @@ function App() {
       strong = false;
     }
   };
-  useEffect(() => {
-    strong === true ? (
-      <h6>Strong Password</h6>
-    ) : weak === true ? (
-      <h6>Weak Password</h6>
-    ) : veryWeak === true ? (
-      <h6>Very Weak Password</h6>
-    ) : (
-      <h6>Enter a Strong password</h6>
-    );
-  });
+ 
   return (
     <>
-      {/* {strong === true ? (
-        <h6>Strong Password</h6>
-      ) : weak === true ? (
-        <h6>Weak Password</h6>
-      ) : veryWeak === true ? (
-        <h6>Very Weak Password</h6>
-      ) : (
-        <h6>Enter a Strong password</h6>
-      )} */}
+     
       <label htmlFor=''>Password:</label>
       <input
         type='password'
@@ -198,7 +180,7 @@ function App() {
           check();
         }}
       />
-      {/* {strong === true ? (
+      { {strong === true ? (
         <h6>Strong Password</h6>
       ) : weak === true ? (
         <h6>Weak Password</h6>
@@ -206,7 +188,7 @@ function App() {
         <h6>Very Weak Password</h6>
       ) : (
         <h6>Enter a Strong password</h6>
-      )} */}
+      )} }
       <h4>Your password must contain:</h4>
       1.A Capital letter. 2.A special character[@,#,$,%,&,*,_,!,?]. 3.Must be
       atleast 8 characters long.
